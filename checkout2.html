@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+        }
+
         .checkout-container {
             max-width: 800px;
             margin: 0 auto;
@@ -49,16 +54,24 @@
 
         .checkout-header h1 {
             font-size: 2.5rem;
-            color: var(--primary-color);
+            color: #ffffff;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .checkout-header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
         }
 
         .checkout-card {
-            background: var(--bg-white);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .product-detail {
@@ -71,26 +84,59 @@
         .product-detail-image img {
             width: 100%;
             border-radius: 15px;
-            box-shadow: var(--shadow);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .product-detail-info h2 {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            color: var(--text-dark);
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .product-detail-info .price {
             font-size: 2rem;
-            color: var(--primary-color);
+            color: #ffd700;
             font-weight: 700;
             margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .product-detail-info .description {
-            color: var(--text-light);
+            color: rgba(255, 255, 255, 0.85);
             line-height: 1.8;
             margin-bottom: 20px;
+        }
+
+        .product-category {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .features-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .features-list li i {
+            color: #ffd700;
+            font-size: 1.1rem;
         }
 
         .features-list {
