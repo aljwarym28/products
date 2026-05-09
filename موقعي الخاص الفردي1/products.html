@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="متجر Saqoor Store لمنتجات MT5 الرقمية: كورسات، كتب، مؤشرات، وإكسبرتات. الطلب حالياً عبر واتساب.">
+    <title>المتجر | Saqoor Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Saqoor Store">
+                <span class="brand-mark">S</span>
+                <span>
+                    <strong>Saqoor Store</strong>
+                    <small>MT5 Digital Library</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="main-nav" aria-label="القائمة الرئيسية">
+                <a href="index.html">الرئيسية</a>
+                <a href="products.html" class="active">المتجر</a>
+                <a href="index.html#categories">الأقسام</a>
+                <a href="index.html#process">طريقة الطلب</a>
+                <a href="index.html#faq">الأسئلة</a>
+                <a class="nav-whatsapp" href="https://wa.me/9647815576089" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    واتساب
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">كتالوغ الإطلاق الأول</p>
+                <h1>منتجات MT5 الرقمية</h1>
+                <p>
+                    منتجات مجانية حقيقية يمكنك تحميلها مباشرة. سيتم إضافة منتجات مدفوعة لاحقاً بعد تجهيز نظام الطلب والدفع.
+                </p>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-toolbar">
+                    <label class="search-box" aria-label="البحث عن منتج">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="productSearch" placeholder="ابحث عن كتاب أو ملف مجاني">
+                    </label>
+
+                    <div class="filter-group" aria-label="تصفية المنتجات">
+                        <button class="filter-btn active" type="button" data-filter="all">الكل</button>
+                        <button class="filter-btn" type="button" data-filter="book">كتب مجانية</button>
+                    </div>
+                </div>
+
+                <div class="product-grid catalog-grid" id="catalogGrid">
+                    <article class="product-card" data-category="book" data-title="السيطرة على الذات قبل السوق">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="مكتب هادئ مع دفتر وملاحظات">
+                        <div class="product-body">
+                            <span class="product-type">كتاب مجاني</span>
+                            <h2>السيطرة على الذات قبل السوق</h2>
+                            <p>ملف مجاني يساعدك على تجهيز الجانب النفسي والانضباط قبل الدخول إلى السوق.</p>
+                            <div class="product-meta">
+                                <span>مجاني</span>
+                                <span>ZIP</span>
+                            </div>
+                            <a class="btn btn-card" href="downloads/السيطرة على الذات قبل السوق.zip" download>تحميل مجاني</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="book" data-title="كتاب خطة تحويل 10 دولار الى مليون دولار">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="دفتر وحاسبة مع أرقام مالية">
+                        <div class="product-body">
+                            <span class="product-type">كتاب مجاني</span>
+                            <h2>كتاب خطة تحويل 10 دولار إلى مليون دولار</h2>
+                            <p>ملف مجاني يعرض فكرة خطة تداول وتدرج رأس المال، مع ضرورة فهم المخاطر قبل التطبيق.</p>
+                            <div class="product-meta">
+                                <span>مجاني</span>
+                                <span>ZIP</span>
+                            </div>
+                            <a class="btn btn-card" href="downloads/كتاب خطة تحويل 10 دولار الى مليون دولار.zip" download>تحميل مجاني</a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-state" id="emptyState" hidden>لا توجد منتجات مطابقة للبحث الحالي.</p>
+            </div>
+        </section>
+
+        <section class="contact-band">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">منتجك الأول</p>
+                    <h2>الأفضل نبدأ بمنتج واحد قوي بدل متجر مزدحم</h2>
+                    <p>يمكنك الآن استخدام المنتجات المجانية لبناء الثقة، وبعدها نضيف منتجات مدفوعة وصفحات بيع كاملة.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="https://wa.me/9647815576089?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A3%D8%A8%D8%AF%D8%A3%20%D8%A8%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8%20%D8%A3%D9%88%D9%84%20%D9%85%D9%86%D8%AA%D8%AC%20%D9%84%D9%85%D8%AA%D8%AC%D8%B1%20Saqoor%20Store" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        رتب أول منتج
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand footer-brand" href="index.html">
+                    <span class="brand-mark">S</span>
+                    <span>
+                        <strong>Saqoor Store</strong>
+                        <small>MT5 Digital Library</small>
+                    </span>
+                </a>
+                <p>متجر عربي للمنتجات الرقمية الخاصة بمنصة MT5.</p>
+            </div>
+            <div>
+                <h3>روابط</h3>
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#categories">الأقسام</a>
+                <a href="index.html#process">طريقة الطلب</a>
+                <a href="index.html#faq">الأسئلة</a>
+            </div>
+            <div>
+                <h3>تواصل</h3>
+                <a href="https://wa.me/9647815576089" target="_blank" rel="noopener">+964 781 557 6089</a>
+                <a href="mailto:aljwarym28@gmail.com">aljwarym28@gmail.com</a>
+                <span>saqoorstore.com</span>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="year"></span> Saqoor Store. جميع الحقوق محفوظة.</span>
+            <span>التداول يحمل مخاطر، والمنتجات لا تمثل نصيحة مالية.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
